@@ -264,7 +264,7 @@ export const ROLES: Role[] = [
   {
     id: 'conspiracy_theorist',
     title: {
-      da: 'Konspirationsteoretikeren',
+      da: 'Konspirations-teoretikeren',
       en: 'The Conspiracy Theorist',
       de: 'Der Verschwörungstheoretiker'
     },

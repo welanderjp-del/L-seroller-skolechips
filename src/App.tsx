@@ -261,13 +261,14 @@ function Card({ role, color, rotation, language }: CardProps) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.3 }}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center w-full"
+              lang={language}
             >
               <div className="w-10 h-1 bg-black/10 rounded-full mb-4" />
-              <h3 className="text-xl font-black mb-3 text-gray-900 leading-tight">
+              <h3 className="text-xl font-black mb-3 text-gray-900 leading-tight break-words w-full">
                 {role.title[language]}
               </h3>
-              <p className="text-gray-700 text-xs font-medium leading-relaxed opacity-80">
+              <p className="text-gray-700 text-xs font-medium leading-relaxed opacity-80 break-words w-full">
                 {role.description[language]}
               </p>
             </motion.div>
