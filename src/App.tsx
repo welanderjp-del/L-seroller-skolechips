@@ -6,7 +6,7 @@ import { ROLES, UI_TEXT, COLORS } from './constants';
 
 const LOGO_URL = 'https://i.imgur.com/lYK7DT3.png';
 // Short wind gust sound
-const SWOSH_SOUND_URL = 'https://assets.mixkit.co/active_storage/sfx/1105/1105-preview.mp3';
+const CARD_FLICK_SOUND_URL = 'https://assets.mixkit.co/active_storage/sfx/2002/2002-preview.mp3';
 
 const FLAGS = {
   da: '🇩🇰',
@@ -28,8 +28,8 @@ export default function App() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    audioRef.current = new Audio(SWOSH_SOUND_URL);
-    audioRef.current.volume = 0.4;
+    audioRef.current = new Audio(CARD_FLICK_SOUND_URL);
+    audioRef.current.volume = 0.6;
     audioRef.current.load();
   }, []);
 
@@ -70,7 +70,7 @@ export default function App() {
     };
   }, [playerCount, updateScale, playerRoles]);
 
-  const playSwoshSound = () => {
+  const playFlickSound = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
       audioRef.current.play().catch(() => {});
@@ -81,7 +81,7 @@ export default function App() {
     if (isFlipping) return;
     
     setIsFlipping(true);
-    playSwoshSound();
+    playFlickSound();
 
     // Logic for "The Reader" rotation
     let nextReaderIndex: number;
