@@ -4,7 +4,7 @@ import { Users, RotateCcw } from 'lucide-react';
 import { Language, PlayerRole, Role } from './types';
 import { ROLES, UI_TEXT, COLORS } from './constants';
 
-const LOGO_URL = 'https://i.imgur.com/lYK7DT3.png';
+const LOGO_URL = 'https://i.ibb.co/fd0xBbnK/ikon.png';
 // Short wind gust sound
 const CARD_FLICK_SOUND_URL = 'https://assets.mixkit.co/active_storage/sfx/2002/2002-preview.mp3';
 
