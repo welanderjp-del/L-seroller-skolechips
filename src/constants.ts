@@ -291,9 +291,9 @@ export const ROLES: Role[] = [
 
 export const UI_TEXT = {
   title: {
-    da: 'Læseroller',
-    en: 'Reading Roles',
-    de: 'Lese-Rollen'
+    da: 'Skolechips Læseroller',
+    en: 'Skolechips Reading Roles',
+    de: 'Skolechips Lese-Rollen'
   },
   newRoles: {
     da: 'Nye læseroller',

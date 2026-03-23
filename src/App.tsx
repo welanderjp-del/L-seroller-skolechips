@@ -4,7 +4,7 @@ import { Users, RotateCcw } from 'lucide-react';
 import { Language, PlayerRole, Role } from './types';
 import { ROLES, UI_TEXT, COLORS } from './constants';
 
-const LOGO_URL = 'https://i.ibb.co/fd0xBbnK/ikon.png';
+const LOGO_URL = 'https://res.cloudinary.com/dtw8jfk0k/image/upload/v1774287946/ikon_m2x8mj.png';
 // Short wind gust sound
 const CARD_FLICK_SOUND_URL = 'https://assets.mixkit.co/active_storage/sfx/2002/2002-preview.mp3';
 
@@ -26,6 +26,10 @@ export default function App() {
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    document.title = UI_TEXT.title[language];
+  }, [language]);
 
   useEffect(() => {
     audioRef.current = new Audio(CARD_FLICK_SOUND_URL);
