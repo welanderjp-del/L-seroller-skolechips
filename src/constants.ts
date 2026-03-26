@@ -295,6 +295,11 @@ export const UI_TEXT = {
     en: 'Skolechips Reading Roles',
     de: 'Skolechips Lese-Rollen'
   },
+  headerTitle: {
+    da: 'Læseroller',
+    en: 'Reading Roles',
+    de: 'Lese-Rollen'
+  },
   newRoles: {
     da: 'Nye læseroller',
     en: 'New Reading Roles',
