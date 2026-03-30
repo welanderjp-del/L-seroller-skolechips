@@ -152,7 +152,7 @@ export default function App() {
       {/* Header */}
       <header className="h-20 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 flex items-center justify-between z-50 shrink-0">
         <div className="flex items-center gap-4">
-          <a href="https://skolechips.dk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:opacity-80 transition-opacity shrink-0">
+          <a href="https://skolechips.dk" className="flex items-center gap-4 hover:opacity-80 transition-opacity shrink-0">
             <img src={LOGO_URL} alt="Skolechips Logo" className="h-10 w-auto" referrerPolicy="no-referrer" />
             <h1 className="text-xl md:text-2xl font-bold tracking-tight text-gray-800 truncate">
               {UI_TEXT.headerTitle[language]}
